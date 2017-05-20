@@ -2,7 +2,7 @@ from flask import Flask
 from flask import jsonify
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def index():
     result = {
     	"response_type": "in_channel",

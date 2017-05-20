@@ -1,1 +1,1 @@
-web: gunicorn --log-file - app
+web: gunicorn --log-file - btcservice:app
